@@ -7,6 +7,14 @@
       "esnext"
     ],
     "allowJs": true,
+    "checkJs": true, // 일반 js파일에서도 에러체크
+    //"declaration": true, // 컴파일시 d.ts 파일도 자동으로 생성
+    "removeComments": true, //컴파일시 주석 제거
+    "noImplicitAny": true, // any 금지
+    "strictNullChecks": true, // null과 undefined 타입으로 toString,split 하는 상황 보호
+    "noUnusedLocals": true, // 쓰지 않는 지역변수 에러 생성
+    //"noImplicitReturns": true, //함수에서 return 에러 생성
+    "noUnusedParameters": true, // 쓰지 않는 파라미터 에러 생성
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -18,7 +26,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react"
   },
   "include": [
     "src"
