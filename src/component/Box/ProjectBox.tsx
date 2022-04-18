@@ -1,9 +1,13 @@
 import React from 'react';
 
-const ProjectBox = () => {
+interface Props {
+    Title: string
+}
+
+const ProjectBox: React.FunctionComponent<Props> = ({Title}) => {
     return (
-        <div>
-            
+        <div style={{backgroundColor: 'red', width: '70%', height: '150px'}}>
+            {Title}
         </div>
     );
 };
