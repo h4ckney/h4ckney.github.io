@@ -2,8 +2,8 @@ import React from 'react';
 
 const Study = () => {
     return (
-        <div>
-            
+        <div style={{width: '50%', margin: '0 25%'}}>
+
         </div>
     );
 };

@@ -8,16 +8,14 @@ import Project from "./page/Project";
 
 function App() {
   return (
-    <div>
       <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Profile/>} />
+            <Route path="/profile" element={<Profile/>} />
               <Route path="/project" element={<Project/>} />
               <Route path="/tech" element={<Tech/>} />
               <Route path="/study" element={<Study/>} />
           </Routes>
       </BrowserRouter>
-    </div>
   );
 }
 
