@@ -1,6 +1,8 @@
 import React from 'react';
 import Styled from "styled-components";
 
+
+
 interface Props {
     /**
      * 프로젝트 이름
@@ -11,6 +13,12 @@ interface Props {
      */
     Description: string
 }
+
+/**
+ * 박스 컴포넌트
+ *
+ * - 프로젝트 관련 컴포넌트입니다
+ */
 
 const ProjectBox: React.FunctionComponent<Props> = ({Title,Description}) => {
     return (

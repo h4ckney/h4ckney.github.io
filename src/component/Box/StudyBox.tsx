@@ -1,6 +1,8 @@
 import React from 'react';
 import Styled from "styled-components";
 
+
+
 interface Props {
     /**
      *  공부하는 것에 대한 이미지 또는 아이콘
@@ -20,6 +22,11 @@ interface Props {
     Tag?: string[]
 }
 
+/**
+ * 박스 컴포넌트
+ *
+ * - 공부 관련 글 컴포넌트입니다
+ */
 
 const StudyBox:React.FunctionComponent<Props> = ({Img, Title, Description, Tag}) => {
     return (
