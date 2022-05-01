@@ -6,7 +6,7 @@ const HeaderNav = () => {
     const navigate = useNavigate()
 
     return (
-        <header style={{ display: "flex", justifyContent: "center"}}>
+        <header style={{ display: "flex", justifyContent: "center", marginBottom: '30px'}}>
             <table>
                 <thead>
                     <LinkTab>
