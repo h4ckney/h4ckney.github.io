@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.abd64e84.css",
-    "main.js": "/static/js/main.1a3ae2ac.js",
+    "main.js": "/static/js/main.44409148.js",
     "static/media/Study.jpg": "/static/media/Study.9afc6d079f934f704c31.jpg",
     "static/media/윤정민.jpg": "/static/media/윤정민.0a4b55888c048e74092f.jpg",
     "index.html": "/index.html",
     "main.abd64e84.css.map": "/static/css/main.abd64e84.css.map",
-    "main.1a3ae2ac.js.map": "/static/js/main.1a3ae2ac.js.map"
+    "main.44409148.js.map": "/static/js/main.44409148.js.map"
   },
   "entrypoints": [
     "static/css/main.abd64e84.css",
-    "static/js/main.1a3ae2ac.js"
+    "static/js/main.44409148.js"
   ]
 }
