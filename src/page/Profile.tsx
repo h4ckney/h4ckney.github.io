@@ -28,7 +28,7 @@ const Profile = () => {
                 </div>
             </MainProfile>
             <Stack>
-                    <h1>skill</h1>
+                    <h1>Skill</h1>
                     <div style={{display: "flex"}}>
                         <p>Front-End:</p>
                         {skill.FrontEnd.map((v)=>
@@ -50,7 +50,7 @@ const Profile = () => {
             </Stack>
             <Introduce>
                 <div>
-                    <h1>introduce</h1>
+                    <h1>Introduce</h1>
                     {introduce.map((v)=>
                         <p style={{width: '800px', lineHeight: 1.7}}>- {v}</p>
                     )}

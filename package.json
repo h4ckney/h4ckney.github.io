@@ -1,4 +1,5 @@
 {
+  "homepage": "https://h4ckney.github.io",
   "name": "h4ckney.github.io",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +9,8 @@
     "@testing-library/user-event": "^14.1.1",
     "@types/jest": "^27.4.1",
     "@types/styled-components": "^5.1.25",
+    "gh-pages": "^3.2.3",
+    "postcss": "^8.4.13",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
@@ -23,7 +26,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
