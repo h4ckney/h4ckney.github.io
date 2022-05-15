@@ -1,6 +1,6 @@
 import React from 'react';
 import StudyBox from "../component/Box/StudyBox";
-import HeaderNav from "../component/Header/HeaderNav";
+import NavHeader from "../component/Header/NavHeader";
 import Recoil from "../asset/img/Recoil.png"
 import Storybook from "../asset/img/Storybook.png"
 
@@ -8,7 +8,7 @@ import Storybook from "../asset/img/Storybook.png"
 const Study = () => {
     return (
         <div style={{width: '60%', margin: '0 20%'}}>
-            <HeaderNav/>
+            <NavHeader/>
             <div style={{display: 'flex', flexWrap: 'wrap'}}>
                 <StudyBox Title={'Github Page를 통한 React 배포'} Description={''} Tag={['배포','Github io']}/>
                 <StudyBox Img={Recoil} Title={'Recoil'} Description={'Recoil의 사용법과 다른 상태 관리 라이브러의 차이점'} Tag={['상태 관리 라이브러리', "Recoil"]}/>

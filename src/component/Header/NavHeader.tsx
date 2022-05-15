@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate} from "react-router-dom";
 import Styled from "styled-components";
 
-const HeaderNav = () => {
+const NavHeader = () => {
     const navigate = useNavigate()
 
     return (
@@ -24,4 +24,4 @@ const LinkTab = Styled.tr`
     cursor: pointer;
 `
 
-export default HeaderNav;
+export default NavHeader;

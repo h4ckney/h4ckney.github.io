@@ -1,10 +1,10 @@
 import React from 'react';
-import HeaderNav from "../component/Header/HeaderNav";
+import NavHeader from "../component/Header/NavHeader";
 
 const Project = () => {
     return (
         <div style={{width: '50%', margin: '0 25%'}}>
-            <HeaderNav/>
+            <NavHeader/>
             <div>
 
             </div>

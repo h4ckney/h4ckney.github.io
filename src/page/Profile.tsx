@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderNav from "../component/Header/HeaderNav";
+import NavHeader from "../component/Header/NavHeader";
 import profileImg from "../asset/img/윤정민.jpg"
 import Styled from "styled-components"
 
@@ -16,7 +16,7 @@ const skill: {FrontEnd: string[], BackEnd: string[], CollaborationTool: string[]
 const Profile = () => {
     return (
         <div style={{width: '50%', margin: '0 25%'}}>
-            <HeaderNav/>
+            <NavHeader/>
             <MainProfile>
                 <img src={profileImg} alt={'profile'}/>
                 <div>

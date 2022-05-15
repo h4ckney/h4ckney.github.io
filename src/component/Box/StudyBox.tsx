@@ -1,6 +1,7 @@
 import React from 'react';
 import Styled from "styled-components";
 import BasicImg from "../../asset/img/Study.jpg"
+import {useNavigate} from "react-router-dom";
 
 interface Props {
     /**
@@ -28,18 +29,19 @@ interface Props {
  */
 
 const StudyBox:React.FunctionComponent<Props> = ({Img, Title, Description, Tag}) => {
+    const navigate = useNavigate()
     return (
-        <StudyContainer>
-            <img src={Img ?? BasicImg} alt={''} style={{width: '100%', height: '70%',borderRadius: '6px 6px 0 0'}}/>
+        <StudyContainer onClick={()=>navigate('/study/detail/1')}>
+            <img src={Img ?? BasicImg} alt={''} style={{width: '100%', height: '70%',borderRadius: '6px 6px 0 0', borderStyle: 'none none solid none'}}/>
             <StudyContent>
                 <h4>{Title}</h4>
                 <p>{Description}</p>
                 <div style={{display: 'flex',marginLeft: '18px'}}>
-                {Tag?.map((v)=>
-                    <div style={{margin: '2px', borderRadius:'12px', border: '1px solid blue',padding: "2.5px"}}>
-                        {v}
-                    </div>
-                )}
+                    {Tag?.map((v)=>
+                        <div style={{margin: '2px', borderRadius:'12px', border: '1px solid blue',padding: "2.5px"}}>
+                            {v}
+                        </div>
+                    )}
                 </div>
             </StudyContent>
         </StudyContainer>
@@ -47,12 +49,12 @@ const StudyBox:React.FunctionComponent<Props> = ({Img, Title, Description, Tag})
 };
 
 const StudyContainer = Styled.div`
-    width: 340px;
+    width: 30%;
     height: 350px;
     border-radius: 6px;
     background-color: white;
-    border: 1px solid #000;
-    background-color: gray;
+    border: 1.5px solid #000;
+    background-color: white;
     margin: 0 20px 20px 0;
 `
 
