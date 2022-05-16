@@ -15,61 +15,64 @@ const skill: {FrontEnd: string[], BackEnd: string[], CollaborationTool: string[]
 
 const Profile = () => {
     return (
-        <div style={{width: '50%', margin: '0 25%'}}>
+        <div>
             <NavHeader/>
-            <MainProfile>
-                <img src={profileImg} alt={'profile'}/>
-                <div>
-                    <h1>윤정민 | 많은 경험을 추구하는 개발자</h1>
-                    <h2>Contact</h2>
-                    <p>Email : jmyoon555@gmail.com</p>
-                    <p>Github: https://github.com/h4ckney</p>
+            <div style={{width: '50%', margin: '0 25%'}}>
 
-                </div>
-            </MainProfile>
-            <Stack>
-                    <h1>Skill</h1>
-                    <div style={{display: "flex"}}>
-                        <p>Front-End:</p>
-                        {skill.FrontEnd.map((v)=>
-                            <p style={{marginLeft: '5px'}}>{v}</p>
-                        )}
-                    </div>
-                    <div style={{display: "flex"}}>
-                        <p>Back-End:</p>
-                        {skill.BackEnd.map((v)=>
-                            <p style={{marginLeft: '5px'}}>{v}</p>
-                        )}
-                    </div>
-                    <div style={{display: "flex"}}>
-                        <p>Collaboration-Tool:</p>
-                        {skill.CollaborationTool.map((v)=>
-                            <p style={{marginLeft: '5px'}}>{v}</p>
-                        )}
-                    </div>
-            </Stack>
-            <Introduce>
-                <div>
-                    <h1>Introduce</h1>
-                    {introduce.map((v)=>
-                        <p style={{width: '800px', lineHeight: 1.7}}>- {v}</p>
-                    )}
-                </div>
-            </Introduce>
-            <WorkExperience>
+                <MainProfile>
+                    <img src={profileImg} alt={'profile'}/>
+                    <div>
+                        <h1>윤정민 | 많은 경험을 추구하는 개발자</h1>
+                        <h2>Contact</h2>
+                        <p>Email : jmyoon555@gmail.com</p>
+                        <p>Github: https://github.com/h4ckney</p>
 
-            </WorkExperience>
-            <Education>
-                <div>
-                    <h1>Education</h1>
-                    <p>최종학력: 한세사이버보안고등학교 (2017-03 ~ 2020-02)</p>
-                </div>
-                <div>
-                    <h1>Certification</h1>
-                    <p>정보처리 기능사 (2018-12)</p>
-                    <p>정보기기운용 기능사 (2019-07)</p>
-                </div>
-            </Education>
+                    </div>
+                </MainProfile>
+                <Stack>
+                        <h1>Skill</h1>
+                        <div style={{display: "flex"}}>
+                            <p>Front-End:</p>
+                            {skill.FrontEnd.map((v)=>
+                                <p style={{marginLeft: '5px'}}>{v}</p>
+                            )}
+                        </div>
+                        <div style={{display: "flex"}}>
+                            <p>Back-End:</p>
+                            {skill.BackEnd.map((v)=>
+                                <p style={{marginLeft: '5px'}}>{v}</p>
+                            )}
+                        </div>
+                        <div style={{display: "flex"}}>
+                            <p>Collaboration-Tool:</p>
+                            {skill.CollaborationTool.map((v)=>
+                                <p style={{marginLeft: '5px'}}>{v}</p>
+                            )}
+                        </div>
+                </Stack>
+                <Introduce>
+                    <div>
+                        <h1>Introduce</h1>
+                        {introduce.map((v)=>
+                            <p style={{width: '800px', lineHeight: 1.7}}>- {v}</p>
+                        )}
+                    </div>
+                </Introduce>
+                <WorkExperience>
+
+                </WorkExperience>
+                <Education>
+                    <div>
+                        <h1>Education</h1>
+                        <p>최종학력: 한세사이버보안고등학교 (2017-03 ~ 2020-02)</p>
+                    </div>
+                    <div>
+                        <h1>Certification</h1>
+                        <p>정보처리 기능사 (2018-12)</p>
+                        <p>정보기기운용 기능사 (2019-07)</p>
+                    </div>
+                </Education>
+            </div>
         </div>
     );
 };

@@ -6,22 +6,28 @@ const NavHeader = () => {
     const navigate = useNavigate()
 
     return (
-        <header style={{ display: "flex", justifyContent: "center", marginBottom: '30px'}}>
-            <table>
-                <thead>
-                    <LinkTab>
-                        <th onClick={()=>navigate('/profile')}>profile</th>
-                        <th onClick={()=>navigate('/project')}>project</th>
-                        <th onClick={()=>navigate('/study')}>study</th>
-                    </LinkTab>
-                </thead>
-            </table>
-        </header>
+        <HeaderTap>
+                <LinkTab onClick={()=>navigate('/profile')}>Profile</LinkTab>
+                <LinkTab onClick={()=>navigate('/project')}>Project</LinkTab>
+                <LinkTab onClick={()=>navigate('/study')}>Study</LinkTab>
+        </HeaderTap>
     );
 };
 
-const LinkTab = Styled.tr`
-    cursor: pointer;
+const HeaderTap = Styled.div`
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 200px 0 0;
+    background-color: blue;
+    height: 50px;
+`
+
+const LinkTab = Styled.p`
+   color: white;
+   cursor: pointer;   
+   margin-right: 30px;
 `
 
 export default NavHeader;

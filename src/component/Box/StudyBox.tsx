@@ -1,7 +1,6 @@
 import React from 'react';
 import Styled from "styled-components";
 import BasicImg from "../../asset/img/Study.jpg"
-import {useNavigate} from "react-router-dom";
 
 interface Props {
     /**
@@ -29,9 +28,9 @@ interface Props {
  */
 
 const StudyBox:React.FunctionComponent<Props> = ({Img, Title, Description, Tag}) => {
-    const navigate = useNavigate()
+
     return (
-        <StudyContainer onClick={()=>navigate('/study/detail/1')}>
+        <StudyContainer onClick={()=>{}}>
             <img src={Img ?? BasicImg} alt={''} style={{width: '100%', height: '70%',borderRadius: '6px 6px 0 0', borderStyle: 'none none solid none'}}/>
             <StudyContent>
                 <h4>{Title}</h4>

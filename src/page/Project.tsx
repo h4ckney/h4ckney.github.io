@@ -3,10 +3,12 @@ import NavHeader from "../component/Header/NavHeader";
 
 const Project = () => {
     return (
-        <div style={{width: '50%', margin: '0 25%'}}>
+        <div>
             <NavHeader/>
-            <div>
+            <div style={{width: '50%', margin: '0 25%'}}>
+                <div>
 
+                </div>
             </div>
         </div>
     );
