@@ -2,6 +2,9 @@ import React from 'react';
 import { useNavigate} from "react-router-dom";
 import Styled from "styled-components";
 
+//Todo
+//로고 또는 블로그명 추가
+
 const NavHeader = () => {
     const navigate = useNavigate()
 
@@ -18,16 +21,15 @@ const HeaderTap = Styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 30px;
-    padding: 0 200px 0 0;
-    background-color: blue;
+    padding: 0 100px 0 0;
+    background-color: #92B4EC;
     height: 50px;
 `
 
 const LinkTab = Styled.p`
    color: white;
    cursor: pointer;   
-   margin-right: 30px;
+   margin-right: 50px;
 `
 
 export default NavHeader;

@@ -17,7 +17,7 @@ const Profile = () => {
     return (
         <div>
             <NavHeader/>
-            <div style={{width: '50%', margin: '0 25%'}}>
+            <div style={{width: '50%', margin: '0 25%', marginTop: '30px'}}>
 
                 <MainProfile>
                     <img src={profileImg} alt={'profile'}/>

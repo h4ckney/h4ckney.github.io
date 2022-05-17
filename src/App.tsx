@@ -6,6 +6,7 @@ import Study from "./page/Study";
 import Tech from "./page/Tech";
 import Project from "./page/Project";
 import Main from "./page/Main";
+import StudyDetail from "./page/StudyDetail";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
               <Route path="/project" element={<Project/>} />
               <Route path="/tech" element={<Tech/>} />
               <Route path="/study" element={<Study/>} />
+              <Route path="/study/detail/:id" element={<StudyDetail/>} />
           </Routes>
       </BrowserRouter>
   );

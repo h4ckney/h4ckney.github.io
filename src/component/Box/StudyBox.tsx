@@ -34,10 +34,10 @@ const StudyBox:React.FunctionComponent<Props> = ({Img, Title, Description, Tag})
             <img src={Img ?? BasicImg} alt={''} style={{width: '100%', height: '70%',borderRadius: '6px 6px 0 0', borderStyle: 'none none solid none'}}/>
             <StudyContent>
                 <h4>{Title}</h4>
-                <p>{Description}</p>
+                <p style={{lineHeight:'1.2'}}>{Description}</p>
                 <div style={{display: 'flex',marginLeft: '18px'}}>
                     {Tag?.map((v)=>
-                        <div style={{margin: '2px', borderRadius:'12px', border: '1px solid blue',padding: "2.5px"}}>
+                        <div style={{margin: '2px', borderRadius:'12px',padding: "2.5px 5px", backgroundColor: '#FFE69A', color: '#16003B'}}>
                             {v}
                         </div>
                     )}
